@@ -4,7 +4,7 @@ library(tidyverse)
 library(ggplot2)
 
 #reading the csv file
-mds <- read.csv(file = 'C:/Users/HP/Desktop/marketing_data.csv')
+mds <- read.csv(file = 'marketing_data.csv')
 #converting character datatype of income to numeric datatype
 Income_new <- gsub("[$,]", "", mds$Income)
 mds$Income <- as.numeric(Income_new)
